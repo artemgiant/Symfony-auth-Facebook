@@ -47,7 +47,7 @@ class FacebookController extends Controller
      * because this is the "redirect_route" you configured
      * in config/packages/knpu_oauth2_client.yaml
      *
-     * @Route("post/connect/facebook/check", name="connect_facebook_check")
+     * @Route("/post/connect/facebook/check", name="connect_facebook_check")
      */
     public function connectCheckAction(Request $request, ClientRegistry $clientRegistry)
     {

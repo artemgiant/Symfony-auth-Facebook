@@ -54,6 +54,7 @@ class MyFacebookAuthenticator extends SocialAuthenticator
 
         $facebookUser = $this->getFacebookClient()
             ->fetchUserFromToken($credentials);
+        dump($facebookUser);
         $email = $facebookUser->getEmail();
         // 1) have they logged in with Facebook before? Easy!
         $existingUser = $this->em->getRepository(User::class)
@@ -67,6 +68,12 @@ class MyFacebookAuthenticator extends SocialAuthenticator
             ->findOneBy(['email' => $email]);
         // 3) Maybe you just want to "register" them by creating
         // a User object
+        if(empty($user)){
+            $user = new User();
+            $user->setEmail($facebookUser->getEmail());
+            $user->setFirstName($facebookUser->getFirstName());
+            $user->setLastName($facebookUser->getLastName());
+        }
         $user->setFacebookId($facebookUser->getId());
         $this->em->persist($user);
         $this->em->flush();

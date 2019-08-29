@@ -220,6 +220,29 @@
     text-align: center;
 }
 
+.sign-in-facebook{
+    margin-top: 10px;
+    position: relative;
+    padding-left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #389aff;
+    font-weight: bold;
+    letter-spacing: .5px;
+}
+
+.sign-in-facebook:before{
+    content: "";
+    height: 22px;
+    width: 30px;
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAbFBMVEUVfcP///8AdMAAd8Hz+fzv9fr6/f4fgMXQ4fAAc78AecHm7/eLtdt1qdZ+r9gAcb7Z5/NBj8uav+Bbm9AphcfH2+260ummxuOfwuE6jMrd6vVRls5moNJtpNNWmc8pg8W+1uuwzOYAabuQud2SFzxcAAAEJklEQVR4nO3da3uiMBCGYQRFHA8RPFXRba3//z9uddfDamsG4hAm+z7fpbkvlGiBEHVCL/I9APH+P2FXfekT4XS0piTWXkL5YfOtcJobisKITLl5FBbB+I6RWd0LxwPfg3pxZvSvsAgN+EVc3Qqnxvd4BDLDG2HuezQS0ewqzELcheedeBJOQjqMXkuKi3DueywyUXkWponvsUh1FvZi3yMRKglfmEKoPQj1B6H+INQfhPqDUH8Q6g9C/UGoPxVCulTjxa0WUhIP4miez7a73W67nf0q83z+3o8oNoPTSUIOubXCL8X77m2xuT+beyzt9jbZYrk6jGdr64baKaRBNF52v7E9NrbtxjYKk3icsXRKhXF/9d07Mxhh0t9X4OkTUlxU82kTxmWvKlCX0LxV9qkSEk1rABUJaV79HapKSOsqU4RCIc1rAtUII95XNL3CeFgXqERoPmoDdQiTSX2gDmHfAahCaBaBC/9eWxew0NQ/juoQ0tgJqEDouAvbL3T8FCoQDpwOpBqETnOhBiGNbALtwkGt3/WahO53zbVc6DoZtl+Y7EMXVpnuh4t9MZo8ZD355HkfMnXpcksmThJ6zP43vApLHvCN4vq3u3gVEuvHfXftNDSvwoTzb/xu5Ha7kldhzPlSmjvej+VXyPhGs3cdl1fhgHGqou/6R/x+Du3/6c6c79z1eyy1n6wYOd8V6Xc+tL9J3W/dbbvQ/cZWr0L7D/yu+83JLRcO3ZcIaLlw6j6qlgszCO1BKBqEELKCUDQIIWQFoWgQQsgKQtEghJAVhKJBqENIgx8z9pPc2efPLz/lX0iT3vDnrML0yYuP9d79C50v63qe/ysVhIU9+9tUuZBxJFIuXAYvLOxrkioXWq9qUy8sgxfap0PtQsYpYt3CYfBCzhdz3cI9YwFr3cJDC1bgkRUypkPlQs4VU7qFnBGoFnY5Y1YtZF0xpVq4CH4fcqZD3ULOdKhbuA1eaF9wT7uQNQLNQt4FxJqFG9YFxJqFH6whaxauWI830izkPYNLs5A1HaoW8p4yplnIG7H8OeAnz0MlKyL7fPJy3gBwHl80CCFkBaFoEELICkLRIISQFYSiQQghKwhFgxBCVhCKBiGErCAUDUIIWUEoGoQQsoJQNAghZAWhaBBCyApC0SCEkBWEokEIISsIRYMQQlYQigYhhKwgFA1CCFlBKBqEELKCUDQIIWQFoWgQQsjqtPD7UZiyFgp5bY0Io7OQucrES2tCSOVFyFsL5aU1IUyKizBzf2xr1ZoQmuFF+IKHC1etASHNOldh8zuxAeGfXfhX2Dm4P3y3WvJCs+rcCjvjhoniQnNe/+cs7BSm0QOqsJDOe/BG2JmWTRpFhWRm16e8RDfbnI7WlDQTYxWlxWfNbVN+2NxsJ7rbbld96Z3oXhheEOrvN+bGaNyBvxVbAAAAAElFTkSuQmCC) center center no-repeat;
+    display: block;
+    background-size: contain;
+    margin-right: 10px;
+
+}
+
 @media (min-width: 1200px){
     .card-link-wrap{
         max-width: 380px;
